@@ -1,95 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>VYYZ - Home</title>
+  <title>V Y Y Z</title>
   <style>
     body {
+      margin: 0;
       background-color: #121212;
       color: #eee;
       font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 30px;
+    }
+    header h1 {
+      font-family: 'Arial Black', Arial, sans-serif;
+      font-size: 60px;
+      letter-spacing: 25px;
+      color: white;
+      user-select: none;
       margin: 0;
-      padding: 20px;
-      max-width: 900px;
-      margin-left: auto;
-      margin-right: auto;
     }
     nav {
-      display: flex;
-      justify-content: flex-end;
-      gap: 20px;
+      background-color: #1f1f1f;
       padding: 10px 0;
-      border-bottom: 1px solid #333;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      font-weight: bold;
     }
     nav a {
-      color: #0ff;
+      color: #eee;
       text-decoration: none;
-      font-weight: 600;
-      transition: color 0.3s ease;
+      font-size: 18px;
+      transition: color 0.3s;
     }
     nav a:hover {
-      color: #7ff;
+      color: #4caf50;
     }
-    h1 {
+    main {
+      flex: 1;
+      max-width: 900px;
+      margin: 0 auto 40px;
+      padding: 0 20px;
       text-align: center;
-      margin: 40px 0 30px 0;
-      font-weight: 700;
-      font-size: 2.5rem;
     }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 25px;
+    main p {
+      font-size: 20px;
+      line-height: 1.6;
+      max-width: 700px;
+      margin: 0 auto;
     }
-    .card {
-      background: #222;
-      border-radius: 10px;
-      padding: 20px;
+    footer {
       text-align: center;
-      box-shadow: 0 3px 8px rgba(0, 255, 255, 0.2);
-      cursor: pointer;
-      transition: background 0.3s ease;
-      font-weight: 600;
-      font-size: 1.1rem;
-      color: #0ff;
-      text-decoration: none;
+      padding: 15px 0;
+      background-color: #1f1f1f;
+      font-size: 14px;
+      color: #777;
       user-select: none;
-    }
-    .card:hover {
-      background: #0ff;
-      color: #121212;
-      box-shadow: 0 4px 12px #0ff;
     }
   </style>
 </head>
 <body>
-
+  <header>
+    <h1>V Y Y Z</h1>
+  </header>
   <nav>
     <a href="index.html">Home</a>
-    <a href="sobre.html">About</a>
-    <a href="contato.html">Contact</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="contato.html">Contato</a>
+    <a href="notes.html">Notas</a>
   </nav>
-<h1 style="letter-spacing: 25px; color: #4caf50; font-family: 'Arial Black', Arial, sans-serif;">
-  V Y Y Z
-</h1>
-
-
-  <div class="grid">
-    <a href="melodies.html" class="card">Melodies</a>
-    <a href="notes.html" class="card">Notes</a>
-    <a href="drums.html" class="card">Drums</a>
-    <a href="keyboard.html" class="card">Keyboard</a>
-    <a href="guitar.html" class="card">Guitar</a>
-    <a href="lead.html" class="card">Lead</a>
-    <a href="pad.html" class="card">Pad</a>
-    <a href="voice.html" class="card">Voice</a>
-    <a href="808.html" class="card">808</a>
-    <a href="909.html" class="card">909</a>
-    <a href="606.html" class="card">606</a>
-  </div>
-
-
-
-
-
+  <main>
+    <p>Bem-vindo ao VYYZ! Aqui você encontra conteúdos sobre música, design e cultura digital. Explore as páginas para aprender mais sobre notas musicais, melodias e muito mais.</p>
+  </main>
+  <footer>
+    &copy; 2025 VYYZ. Todos os direitos reservados.
+  </footer>
+</body>
+</html>

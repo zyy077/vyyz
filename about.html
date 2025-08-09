@@ -1,58 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About - VYYZ</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #121212;
-      color: #eee;
-      padding: 20px;
-      max-width: 600px;
-      margin: auto;
-    }
-    h1 {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    .links-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      justify-content: center;
-    }
-    .link-button {
-      background: #222;
-      border: none;
-      border-radius: 6px;
-      padding: 12px 20px;
-      color: #0ff;
-      font-weight: 600;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
-      transition: background 0.3s ease;
-    }
-    .link-button:hover {
-      background: #0ff;
-      color: #121212;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sobre - VYYZ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #121212;
+            color: #eee;
+            margin: 0;
+            padding: 0 20px;
+        }
+        header {
+            background: #222;
+            padding: 15px 0;
+            text-align: center;
+        }
+        header a {
+            color: #eee;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 24px;
+        }
+        main {
+            max-width: 700px;
+            margin: 30px auto;
+            background: #1f1f1f;
+            padding: 25px;
+            border-radius: 8px;
+            line-height: 1.6;
+            font-size: 18px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 14px;
+            color: #777;
+        }
+        a.link-home {
+            display: inline-block;
+            margin-top: 20px;
+            color: #4caf50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a.link-home:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <a href="index.html">VYYZ - Home</a>
+    </header>
 
-  <h1>About</h1>
+    <main>
+        <h1>Sobre o VYYZ</h1>
+        <p>
+            O VYYZ é um projeto dedicado a compartilhar conhecimento e inspiração em música, design e cultura digital. Aqui você encontra conteúdos selecionados, dicas, análises e um espaço para conectar ideias e pessoas.
+        </p>
+        <p>
+            Nosso objetivo é construir uma comunidade aberta, onde todo mundo pode aprender e crescer junto, com um design simples e moderno que facilita a navegação.
+        </p>
 
-  <div class="links-container">
-    <a href="https://instagram.com/seuusuario" target="_blank" class="link-button">Instagram</a>
-    <a href="https://youtube.com/channel/seucanal" target="_blank" class="link-button">YouTube</a>
-    <a href="mailto:seuemail@exemplo.com" class="link-button">Gmail</a>
-    <a href="https://bandlab.com/seuusuario" target="_blank" class="link-button">BandLab</a>
-    <a href="https://soundcloud.com/seuusuario" target="_blank" class="link-button">SoundCloud</a>
-    <a href="https://facebook.com/seuusuario" target="_blank" class="link-button">Facebook</a>
-  </div>
+        <a href="index.html" class="link-home">← Voltar para a Home</a>
+    </main>
 
+    <footer>
+        &copy; 2025 VYYZ. Todos os direitos reservados.
+    </footer>
 </body>
 </html>
