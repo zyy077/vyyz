@@ -75,4 +75,95 @@
 
 <a href="contato.html">Contact</a>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VYYZ - Home</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #eee;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      gap: 20px;
+      padding: 10px 0;
+      border-bottom: 1px solid #333;
+    }
+    nav a {
+      color: #0ff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #7ff;
+    }
+    h1 {
+      text-align: center;
+      margin: 40px 0 30px 0;
+      font-weight: 700;
+      font-size: 2.5rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background: #222;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 3px 8px rgba(0, 255, 255, 0.2);
+      cursor: pointer;
+      transition: background 0.3s ease;
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: #0ff;
+      text-decoration: none;
+      user-select: none;
+    }
+    .card:hover {
+      background: #0ff;
+      color: #121212;
+      box-shadow: 0 4px 12px #0ff;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="sobre.html">About</a>
+    <a href="contato.html">Contact</a>
+  </nav>
+
+  <h1>Welcome to VYYZ</h1>
+
+  <div class="grid">
+    <a href="melodies.html" class="card">Melodies</a>
+    <a href="notes.html" class="card">Notes</a>
+    <a href="drums.html" class="card">Drums</a>
+    <a href="keyboard.html" class="card">Keyboard</a>
+    <a href="guitar.html" class="card">Guitar</a>
+    <a href="lead.html" class="card">Lead</a>
+    <a href="pad.html" class="card">Pad</a>
+    <a href="voice.html" class="card">Voice</a>
+    <a href="808.html" class="card">808</a>
+    <a href="909.html" class="card">909</a>
+    <a href="606.html" class="card">606</a>
+  </div>
+
+</body>
+</html>
 
