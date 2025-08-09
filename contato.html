@@ -1,138 +1,125 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contato - vyyz</title>
-  <style>
-    body {
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      color: #f0f0f0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #111;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    nav a {
-      color: #00ffea;
-      text-decoration: none;
-      margin-left: 1.5rem;
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
-    nav a:hover {
-      color: #00cca8;
-    }
-    main {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-    }
-    p {
-      line-height: 1.6;
-      font-size: 1.1rem;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #111;
-      color: #555;
-      margin-top: 3rem;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contato - VYYZ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #121212;
+            color: #eee;
+            margin: 0;
+            padding: 0 20px;
+        }
+        header {
+            background: #222;
+            padding: 15px 0;
+            text-align: center;
+        }
+        header a {
+            color: #eee;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 24px;
+        }
+        main {
+            max-width: 600px;
+            margin: 30px auto;
+            background: #1f1f1f;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form label {
+            display: block;
+            margin: 15px 0 5px;
+        }
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 4px;
+            border: none;
+            resize: vertical;
+            background: #333;
+            color: #eee;
+        }
+        form textarea {
+            min-height: 100px;
+        }
+        form button {
+            margin-top: 20px;
+            padding: 12px 20px;
+            background: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        form button:hover {
+            background: #45a045;
+        }
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <div class="logo"><strong>vyyz</strong></div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="sobre.html">Sobre</a>
-      <a href="contato.html">Contato</a>
-    </nav>
-  </header>
-  <main>
-    <h1>Contato</h1>
-    <p>Quer falar com a gente? Envie um e-mail para contato@vyyz.com ou use o formulário abaixo.</p>
-    <!-- Futuramente podemos adicionar um formulário aqui -->
-  </main>
-  <footer>
-    &copy; 2025 vyyz - Todos os direitos reservados.
-  </footer>
+    <header>
+        <a href="index.html">VYYZ - Home</a>
+    </header>
+
+    <main>
+        <h1>Contato</h1>
+        <form action="#" method="POST" onsubmit="return validarFormulario()">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required />
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <footer>
+        &copy; 2025 VYYZ. Todos os direitos reservados.
+    </footer>
+
+    <script>
+        function validarFormulario() {
+            const nome = document.getElementById('nome').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const mensagem = document.getElementById('mensagem').value.trim();
+
+            if (nome === '' || email === '' || mensagem === '') {
+                alert('Por favor, preencha todos os campos.');
+                return false;
+            }
+
+            // Simples validação de email
+            const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!regexEmail.test(email)) {
+                alert('Por favor, digite um e-mail válido.');
+                return false;
+            }
+
+            alert('Mensagem enviada com sucesso! (Simulado)');
+            return false; // Remove essa linha se tiver backend
+        }
+    </script>
 </body>
 </html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About - VYYZ</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #121212;
-      color: #eee;
-      padding: 20px;
-      max-width: 600px;
-      margin: auto;
-    }
-    h1 {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    .links-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      justify-content: center;
-    }
-    .link-button {
-      background: #222;
-      border: none;
-      border-radius: 6px;
-      padding: 12px 20px;
-      color: #0ff;
-      font-weight: 600;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
-      transition: background 0.3s ease;
-    }
-    .link-button:hover {
-      background: #0ff;
-      color: #121212;
-    }
-  </style>
-</head>
-<body>
 
-  <h1></h1>
-
-  <div class="links-container">
-    <a href="https://instagram.com/seuusuario" target="_blank" class="link-button">Instagram</a>
-    <a href="https://youtube.com/channel/seucanal" target="_blank" class="link-button">YouTube</a>
-    <a href="mailto:seuemail@exemplo.com" class="link-button">Gmail</a>
-    <a href="https://bandlab.com/seuusuario" target="_blank" class="link-button">BandLab</a>
-    <a href="https://soundcloud.com/seuusuario" target="_blank" class="link-button">SoundCloud</a>
-    <a href="https://facebook.com/seuusuario" target="_blank" class="link-button">Facebook</a>
-  </div>
-
-</body>
-</html>
-<nav>
-  <a href="index.html">Home</a>
-  <a href="contato.html">Contact</a>
-</nav>
